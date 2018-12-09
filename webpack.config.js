@@ -9,6 +9,15 @@ module.exports = {
     publicPath: "/dist/",
     filename: "app.js"
   },
+
+  /** for production
+   
+  plugins: [
+   
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    })
+  ]*/
   watch: true,
   module: {
     loaders: [
