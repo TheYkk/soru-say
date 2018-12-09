@@ -1,22 +1,22 @@
-# Introduction
 
-A seed project for Vuejs, Webpack, and Gulp.
+# Proje nedir
+Soru sayma projesi
 
-It is something similar to the Vuejs Vue loader example but it uses Gulp.
+![Screenshot](ss.png)
 
-# How to start
 
-**Note** that this seed project requires node v4.x.x or higher and npm 3.x.x.
+# Nasil Calisitirilir
+
+**Not** projenin calismasi icin node.js v4.x.x ve ya daha yuksek  ve npm 3.x.x. gereklidir
 
 ```bash
-git clone https://github.com/rodzzlessa24/vue-webgulp.git
-cd vue-webgulp
-npm i   # or `npm run reinstall` if you get an error
-npm start    # start app
+git clone https://github.com/TheYkk/soru-say
+cd soru-say
+npm i   
+npm start    # uygulamayi baslatir
 ```
-_Does not rely on any global dependencies._
 
-# Directory Structure
+# Klasor Yapisi
 
 ```
 .
@@ -25,17 +25,12 @@ _Does not rely on any global dependencies._
 ├── README.md
 ├── src
 │   ├── components
-│   │   ├── About.Vue
-│   │   |── App.vue
-│   │   |── Home.vue
-│   │   └── Quote.vue
-│   |── services
-│   |    └── quote
-|   |       └── index.js
-│   ├── app.scss
+│   │   ├── Say.Vue
+│   ├── stylesheets
+│   │   ├── app.scss
+│   │   ├── variables.scss
 │   ├── index.html
 │   ├── main.js
-|   └── variables.scss
 ├── gulpfile.js
 ├── webpack.config.js
 └── package.json
