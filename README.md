@@ -28,7 +28,6 @@ npm start    # uygulamayi baslatir
 │   │   ├── Say.Vue
 │   ├── stylesheets
 │   │   ├── app.scss
-│   │   ├── variables.scss
 │   ├── index.html
 │   ├── main.js
 ├── gulpfile.js
