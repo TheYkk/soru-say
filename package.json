@@ -42,7 +42,7 @@
     "karma-jasmine": "^0.3.8",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-webpack": "^1.7.0",
-    "node-sass": "^3.4.2",
+    "node-sass": "",
     "phantomjs-prebuilt": "^2.1.6",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
@@ -54,6 +54,7 @@
     "webpack-stream": "^2.3.0"
   },
   "dependencies": {
+    "bulma": "^0.7.2",
     "foundation-sites": "^6.0.6",
     "vue": "^2.1.10",
     "vue-resource": "^1.0.3",

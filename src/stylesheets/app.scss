@@ -1,10 +1,15 @@
 /** IMPORTS **/
-@import '~foundation-sites/scss/foundation.scss';
-@include foundation-everything;
-@include foundation-flex-grid; // Remove this if you want the regular float grid
-@import "./variables.scss";
+@import '~bulma/css/bulma.css';
 
-/** GLOBALS **/
-body{
-  color: $black;
+
+.container {
+  
+  .columns{
+    margin-top: 35px;
+  }
+  
+  .title{
+    text-align: center;
+    margin-top: 17%;
+  }
 }
