@@ -38,3 +38,8 @@ npm start    # uygulamayi baslatir
 # License
 
 MIT
+
+# Gelecek ozellikler
+* Mongodb baglantisi
+* User sistemi
+* Haftalik , Aylik cizelge
