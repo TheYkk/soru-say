@@ -1,7 +1,7 @@
 <template>
    <div class="container"> 
 	
-	  <h1 class="title">Toplam : {{ toplamSoru }}</h1>  
+	  <h1 class="title">Toplam : {{ $store.getters.topla }}</h1>  
 	  <a id="temizle" v-on:click="clear()" class="button  is-danger is-outlined ">Temizle</a>
 	  <div class="columns">
 		  <div class="column">
@@ -43,22 +43,22 @@ export default {
 		this.sifir();
 	}
   },
-  computed:{
+  /*computed:{
 	toplamSoru : {
 		get: function () {
 			let count = 0;
 			this.$store.getters.dersler.map((ders) => {
               count = count + ders;
-              console.log('ders');
+              
             })
 			return count;			
 		},
 	}
-  },
+  },*/
   methods: {
 	say(name) {
 	  
-	  if (!this.ders) {
+	  if (!this.$store.getters.dersler) {
 		return;
 	  }
 	  //this.ders[name] +=1; 
@@ -87,8 +87,9 @@ export default {
 		
 	},
 	saveDers() {
-	  const parsed = JSON.stringify($store.getters.dersler);
+	  const parsed = JSON.stringify(this.$store.getters.dersler);
 	  localStorage.setItem('ders', parsed);
 	}
   }
 }
+</script>
