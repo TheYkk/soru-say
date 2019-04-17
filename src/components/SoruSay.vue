@@ -32,7 +32,7 @@ export default {
     "name":"SoruSay",
    data: function () {
 	return {
-	  ders: [],
+	  ders:{},
 	  // toplam:0,
 	}
   },
