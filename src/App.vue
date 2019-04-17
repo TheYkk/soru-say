@@ -26,4 +26,19 @@
     }
   }
 }
+/** IMPORTS **/
+@import '~bulma/css/bulma.min.css';
+
+
+.container {
+  
+  .columns{
+    margin-top: 35px;
+  }
+  
+  .title{
+    text-align: center;
+    margin-top: 17%;
+  }
+}
 </style>
