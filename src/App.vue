@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/soru">Soru Say</router-link>
     </div>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
@@ -27,16 +27,14 @@
   }
 }
 /** IMPORTS **/
-@import '~bulma/css/bulma.min.css';
-
+@import "~bulma/css/bulma.min.css";
 
 .container {
-  
-  .columns{
+  .columns {
     margin-top: 35px;
   }
-  
-  .title{
+
+  .title {
     text-align: center;
     margin-top: 17%;
   }

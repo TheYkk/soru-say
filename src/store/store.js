@@ -19,18 +19,10 @@ export const store = new Vuex.Store({
     dersler: state => state.ders,
     topla: state => {
       let total = 0;
-      Object.values(state.ders).forEach(function (key) {
+      Object.values(state.ders).forEach(function(key) {
         total += key;
       });
       return total;
     }
-    /*
-    toplam: (state) => 
-      let count = 0;
-      this.$store.getters.dersler.map(ders => {
-        count = count + ders;
-      });
-      return count;
-    }*/
   }
 });
