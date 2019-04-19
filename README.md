@@ -1,5 +1,8 @@
-# sorusay
+# Soru Say
 
+## Demo 
+
+Deployed with heroku [Soru Say](https://soru-say.herokuapp.com)
 ## Project setup
 ```
 yarn install
