@@ -8,43 +8,25 @@
 			>Temizle</a
 		>
 		<div class="soru-say-container">
-			<a
-				v-on:click="say('mat')"
-				class="button is-large is-primary is-outlined"
-				>Matematik ({{ $store.getters.dersler.mat }})</a
-			>
-			<a
-				v-on:click="say('geo')"
-				class="button is-large is-primary is-outlined"
-				>Geometri ({{ $store.getters.dersler.geo }})</a
-			>
-			<a
-				v-on:click="say('fiz')"
-				class="button is-large is-primary is-outlined"
-				>Fizik ({{ $store.getters.dersler.fiz }})</a
-			>
-			<a
-				v-on:click="say('biy')"
-				class="button is-large is-primary is-outlined"
-				>Biyoloji ({{ $store.getters.dersler.biy }})</a
-			>
-			<a
-				v-on:click="say('kim')"
-				class="button is-large is-primary is-outlined"
-				>Kimya ({{ $store.getters.dersler.kim }})</a
-			>
-			<a
-				v-on:click="say('par')"
-				class="button is-large is-primary is-outlined"
-				>Paragraf ({{ $store.getters.dersler.par }})</a
-			>
+			<v-button ders="mat" v-on:click="say('mat')">Matematik</v-button>
+			<v-button ders="geo" v-on:click="say('geo')">Geometri</v-button>
+			<v-button ders="fiz" v-on:click="say('fiz')">Fizik</v-button>
+			<v-button ders="biy" v-on:click="say('biy')">Biyoloji</v-button>
+			<v-button ders="kim" v-on:click="say('kim')">Kimya</v-button>
+			<v-button ders="par" v-on:click="say('par')">Paragraf</v-button>
 		</div>
 	</div>
 </template>
 
 <script>
+import Button from "./Button.vue";
+
 export default {
 	name: "SoruSay",
+
+	components: {
+		"v-button": Button
+	},
 	mounted() {
 		if (localStorage.getItem("ders")) {
 			try {
