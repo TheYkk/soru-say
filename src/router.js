@@ -5,19 +5,18 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/soru",
-      name: "soru",
-      component: () =>
-        import("./views/Soru.vue")
-    }
-  ]
+	mode: "history",
+	base: process.env.BASE_URL,
+	routes: [
+		{
+			path: "/",
+			name: "home",
+			component: Home
+		},
+		{
+			path: "/soru",
+			name: "soru",
+			component: () => import("./views/Soru.vue")
+		}
+	]
 });

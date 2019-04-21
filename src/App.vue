@@ -1,42 +1,42 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/soru">Soru Say</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<div id="nav">
+			<router-link to="/">Home</router-link> |
+			<router-link to="/soru">Soru Say</router-link>
+		</div>
+		<router-view />
+	</div>
 </template>
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 #nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+	padding: 30px;
+	a {
+		font-weight: bold;
+		color: #2c3e50;
+		&.router-link-exact-active {
+			color: #42b983;
+		}
+	}
 }
 /** IMPORTS **/
 @import "~bulma/css/bulma.min.css";
 
 .container {
-  .columns {
-    margin-top: 35px;
-  }
+	.columns {
+		margin-top: 35px;
+	}
 
-  .title {
-    text-align: center;
-    margin-top: 17%;
-  }
+	.title {
+		text-align: center;
+		margin-top: 17%;
+	}
 }
 </style>
